@@ -87,32 +87,32 @@ class Player
 
 end
 ############################################
-adam = Player.new('Adam', 'X')
-francis = Player.new('Franics', 'O')
-p Player.players
+# adam = Player.new('Adam', 'X')
+# francis = Player.new('Franics', 'O')
+# p Player.players
 
 
-board = Board.new
-board.display_board
+# board = Board.new
+# board.display_board
 
-i = 0
-while i <= 8 do
-  i.even? ? name = adam : name = francis
-  puts "Eliza: It's your turn, #{name.name}."
-  success = false
+# i = 0
+# while i <= 8 do
+#   i.even? ? name = adam : name = francis
+#   puts "Eliza: It's your turn, #{name.name}."
+#   success = false
 
-  while success == false
-    choice = name.choose
+#   while success == false
+#     choice = name.choose
 
-    success = board.draw(choice[0], choice[1], choice[2])
-    board.display_board
+#     success = board.draw(choice[0], choice[1], choice[2])
+#     board.display_board
 
-  end
+#   end
 
-  winner = board.win
+#   winner = board.win
 
-  return puts "Eliza: #{winner} wins." if winner != nil
-  i += 1
-end
+#   return puts "Eliza: #{winner} wins." if winner != nil
+#   i += 1
+# end
 
-puts 'Game over. Tie.'
+# puts 'Game over. Tie.'
