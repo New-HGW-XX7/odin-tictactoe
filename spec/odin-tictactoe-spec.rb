@@ -10,4 +10,12 @@ describe Board do
       board.display_board
     end
   end
+
+  describe '#win' do
+    context 'if setup without any stubs' do
+      it 'returns nil' do
+        expect(board.win).to eq(nil)
+      end
+    end
+  end
 end
